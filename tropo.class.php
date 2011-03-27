@@ -1185,8 +1185,9 @@ class Result {
 		$this->_interpretation = $result->result->actions->interpretation;
 		$this->_utterance = $result->result->actions->utterance;
 		$this->_value = $result->result->actions->value;
-		$this->_concept = $result->result->concept->value;
-		
+		/*  Concept is not passed by Tropo (yet?)
+		*$this->_concept = $result->result->concept->value;
+		*/
 	}
 	
 	function getSessionId() {
